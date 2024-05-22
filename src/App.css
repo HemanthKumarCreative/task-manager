@@ -1,0 +1,8 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #292626;
+  color: whitesmoke;
+  height: 100vh;
+}

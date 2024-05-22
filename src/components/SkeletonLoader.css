@@ -1,0 +1,34 @@
+/* SkeletonLoader.css */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton-wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  background-image: linear-gradient(
+    90deg,
+    #f0f0f0 0px,
+    #e0e0e0 40px,
+    #f0f0f0 80px
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Custom width, height, borderRadius, and marginBottom */
+.skeleton-custom {
+  width: var(--width, 100%);
+  height: var(--height, 100%);
+  border-radius: var(--borderRadius, 4px);
+  margin-bottom: var(--marginBottom, 10px);
+}
